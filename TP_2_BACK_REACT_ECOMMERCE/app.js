@@ -28,10 +28,6 @@ app.use(urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(cors());
 
-app.get("/",(req,res) => {
- res.setHeader("Access-Control-Allow-Credentials","true");
- res.send("API es running..");
-}
 
 // Configuración de rutas
 import indexRouter from "./routes/index.js";
